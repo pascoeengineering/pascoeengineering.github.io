@@ -17,3 +17,8 @@ if (menuButton && siteNav) {
     );
   });
 }
+const yearElements = document.querySelectorAll(".current-year");
+
+yearElements.forEach((element) => {
+  element.textContent = new Date().getFullYear();
+});
