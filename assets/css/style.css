@@ -180,27 +180,40 @@ p {
 
 .nav-container {
   display: flex;
-  min-height: 84px;
+  min-height: 96px;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 48px;
 }
 
 .site-logo {
-  color: #171717;
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.site-logo img {
+  display: block;
+  width: auto;
+  height: 75px;
 }
 
 .site-nav ul {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 34px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media (max-width: 820px) {
+  .nav-container {
+    min-height: 78px;
+  }
+
+  .site-logo img {
+    height: 62px;
+  }
 }
 
 .site-nav a {
