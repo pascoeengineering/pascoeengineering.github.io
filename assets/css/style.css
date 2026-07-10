@@ -14,7 +14,8 @@ a:hover { text-decoration: underline; }
 .container { width: min(1120px, 92%); margin: 0 auto; }
 header { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
 .nav { display: flex; align-items: center; justify-content: space-between; min-height: 76px; }
-.logo { font-weight: 800; color: var(--dark); font-size: 1.25rem; letter-spacing: .02em; }
+.logo { font-weight: 800; color: var(--dark); font-size: 1.25rem; letter-spacing: .02em; display: flex; align-items: center; }
+.logo img { height: 50px; width: auto; max-width: 180px; }
 .logo span { color: var(--red); }
 nav ul { list-style: none; display: flex; gap: 1.4rem; padding: 0; margin: 0; align-items: center; }
 nav a { color: var(--dark); font-weight: 600; }
