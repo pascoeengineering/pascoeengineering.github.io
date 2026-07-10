@@ -480,3 +480,76 @@ p {
   color: #ffffff;
   background: #171717;
 }
+/* =========================
+   Homepage About
+   ========================= */
+
+.home-about {
+  border-top: 1px solid #dfdfdf;
+}
+
+.home-about-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(48px, 9vw, 140px);
+  align-items: start;
+}
+
+.home-about-heading {
+  position: sticky;
+  top: 120px;
+}
+
+.home-about-heading h2 {
+  max-width: 520px;
+  margin-bottom: 0;
+}
+
+.home-about-content {
+  max-width: 700px;
+}
+
+.home-about-content p {
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.home-about-content p:first-child {
+  color: #171717;
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  color: #e2231a;
+  font-weight: 700;
+}
+
+.text-link span {
+  transition: transform 0.2s ease;
+}
+
+.text-link:hover span {
+  transform: translateX(5px);
+}
+
+@media (max-width: 800px) {
+  .home-about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .home-about-heading {
+    position: static;
+  }
+
+  .home-about-content {
+    max-width: none;
+  }
+}
