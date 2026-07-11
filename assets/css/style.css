@@ -2178,3 +2178,73 @@ p {
     gap: 12px;
   }
 }
+/* =========================
+   About - Who We Work With
+   ========================= */
+
+.about-clients {
+  background: #ffffff;
+}
+
+.about-clients-heading {
+  align-items: end;
+}
+
+.about-clients-heading > p {
+  max-width: 560px;
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.about-clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.about-client {
+  position: relative;
+  min-height: 320px;
+  padding: 34px;
+  overflow: hidden;
+  background: #f7f7f7;
+  border: 1px solid #e4e4e4;
+}
+
+.about-client-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 76px;
+  height: 3px;
+  background: #e2231a;
+}
+
+.about-client-label {
+  margin: 10px 0 18px;
+  color: #e2231a;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-client h3 {
+  margin-bottom: 18px;
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+}
+
+.about-client > p:last-child {
+  margin-bottom: 0;
+  line-height: 1.75;
+}
+
+@media (max-width: 900px) {
+  .about-clients-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-client {
+    min-height: auto;
+  }
+}
