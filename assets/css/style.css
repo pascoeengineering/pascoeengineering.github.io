@@ -320,15 +320,15 @@ p {
 }
 
 .hero-content {
-  max-width: 720px;
+  max-width: 680px;
 }
 
 .hero h1 {
-  max-width: 760px;
+  max-width: 680px;
   margin-bottom: 28px;
-  font-size: clamp(3rem, 6vw, 5.5rem);
-  line-height: 1.02;
-  letter-spacing: -0.05em;
+  font-size: clamp(3.2rem, 6vw, 5.75rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
 }
 
 .hero-description {
@@ -597,10 +597,17 @@ p {
 }
 
 .home-about-content p:first-child {
+  position: relative;
+  max-width: 680px;
+  margin-bottom: 30px;
   color: #171717;
-  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
   font-weight: 600;
   line-height: 1.5;
+}
+
+.home-about-content p:not(:first-child) {
+  max-width: 650px;
 }
 
 .text-link {
@@ -634,6 +641,7 @@ p {
     max-width: none;
   }
 }
+
 /* =========================
    Featured Services
    ========================= */
