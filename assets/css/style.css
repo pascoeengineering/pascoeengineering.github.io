@@ -2096,3 +2096,85 @@ p {
     }
 
 }
+/* =========================
+   About - Our Approach
+   ========================= */
+
+.about-approach {
+  background: #f7f7f7;
+}
+
+.about-approach-heading {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(40px, 8vw, 120px);
+  align-items: end;
+  margin-bottom: 64px;
+}
+
+.about-approach-heading h2 {
+  max-width: 680px;
+  margin-bottom: 0;
+}
+
+.about-approach-heading > p {
+  max-width: 650px;
+  margin-bottom: 0;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.about-approach-list {
+  border-top: 1px solid #d8d8d8;
+}
+
+.approach-item {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 70px);
+  padding-block: 38px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.approach-accent {
+  width: 40px;
+  height: 2px;
+  margin-top: 11px;
+  background: #e2231a;
+}
+
+.approach-label {
+  margin-bottom: 10px;
+  color: #e2231a;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.approach-item h3 {
+  max-width: 720px;
+  margin-bottom: 12px;
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+}
+
+.approach-item p:last-child {
+  max-width: 760px;
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+  .about-approach-heading {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 520px) {
+  .approach-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
