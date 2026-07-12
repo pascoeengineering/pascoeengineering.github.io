@@ -1087,6 +1087,55 @@ p {
   }
 }
 /* =========================
+   Homepage Theme Variations
+   ========================= */
+
+/* Dark Why We Exist section */
+
+.home-about-dark {
+  color: #ffffff;
+  background: #171717;
+  border-top-color: #303030;
+}
+
+.home-about-dark h2,
+.home-about-dark .home-about-content p:first-child {
+  color: #ffffff;
+}
+
+.home-about-dark .home-about-content p:not(:first-child) {
+  color: #b9b9b9;
+}
+
+.home-about-dark .text-link {
+  color: #e2231a;
+}
+
+/* Light What You Can Expect section */
+
+.why-us-light {
+  color: #171717;
+  background: #f7f7f7;
+}
+
+.why-us-light .why-us-intro h2,
+.why-us-light .why-us-point h3 {
+  color: #171717;
+}
+
+.why-us-light .why-us-intro > p:last-child,
+.why-us-light .why-us-point p {
+  color: #626262;
+}
+
+.why-us-light .why-us-points {
+  border-top-color: #d8d8d8;
+}
+
+.why-us-light .why-us-point {
+  border-bottom-color: #d8d8d8;
+}
+/* =========================
    Services Page Hero
    ========================= */
 
