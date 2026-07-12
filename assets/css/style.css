@@ -2843,3 +2843,228 @@ p {
     padding: 24px 22px;
   }
 }
+/* =========================
+   Services Landing Page
+   ========================= */
+
+.practice-areas {
+  background: #f7f7f7;
+}
+
+.practice-areas-heading,
+.project-journey-heading {
+  align-items: end;
+}
+
+.practice-areas-heading > p,
+.project-journey-heading > p {
+  max-width: 560px;
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.practice-area-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.practice-area-card {
+  position: relative;
+  display: flex;
+  min-height: 540px;
+  flex-direction: column;
+  padding: 36px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.practice-area-card:hover {
+  transform: translateY(-5px);
+  border-color: #bdbdbd;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
+}
+
+.practice-area-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 82px;
+  height: 3px;
+  background: #e2231a;
+  transition: width 0.25s ease;
+}
+
+.practice-area-card:hover .practice-area-accent {
+  width: 100%;
+}
+
+.practice-area-label {
+  margin: 10px 0 18px;
+  color: #e2231a;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.practice-area-card h3 {
+  margin-bottom: 18px;
+  font-size: clamp(1.45rem, 2.3vw, 1.9rem);
+}
+
+.practice-area-card > p:not(.practice-area-label) {
+  margin-bottom: 28px;
+  line-height: 1.75;
+}
+
+.practice-area-list {
+  margin-bottom: 30px;
+  padding-top: 24px;
+  border-top: 1px solid #d8d8d8;
+}
+
+.practice-area-list > p {
+  margin-bottom: 16px;
+  color: #171717;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.practice-area-list ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.practice-area-list li {
+  position: relative;
+  padding-left: 18px;
+  color: #4f4f4f;
+  line-height: 1.5;
+}
+
+.practice-area-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  width: 7px;
+  height: 2px;
+  background: #e2231a;
+}
+
+.practice-area-card .text-link {
+  margin-top: auto;
+}
+
+.project-journey {
+  background: #ffffff;
+}
+
+.project-journey-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+}
+
+.project-journey-step {
+  min-height: 320px;
+  padding: 32px;
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.project-journey-label {
+  margin-bottom: 44px;
+  color: #e2231a;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-journey-step h3 {
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+}
+
+.project-journey-step p:last-child {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.services-help {
+  color: #ffffff;
+  background: #171717;
+}
+
+.services-help-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(48px, 9vw, 140px);
+  align-items: center;
+}
+
+.services-help h2 {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.services-help-content {
+  max-width: 680px;
+}
+
+.services-help-content p {
+  margin-bottom: 30px;
+  color: #b9b9b9;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 1100px) {
+  .project-journey-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 950px) {
+  .practice-area-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .practice-area-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .services-help-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-journey-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-journey-step {
+    min-height: auto;
+  }
+
+  .project-journey-label {
+    margin-bottom: 24px;
+  }
+}
