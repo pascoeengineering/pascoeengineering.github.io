@@ -3068,3 +3068,237 @@ p {
     margin-bottom: 24px;
   }
 }
+/* =========================
+   Practice Area Pages
+   ========================= */
+
+.practice-overview {
+  background: #ffffff;
+}
+
+.practice-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(48px, 9vw, 140px);
+  align-items: start;
+}
+
+.practice-overview h2 {
+  margin-bottom: 0;
+}
+
+.practice-overview-content {
+  max-width: 680px;
+}
+
+.practice-overview-lead {
+  color: #171717;
+  font-size: clamp(1.25rem, 2.3vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.practice-overview-content p {
+  line-height: 1.8;
+}
+
+.practice-projects {
+  background: #f7f7f7;
+}
+
+.practice-projects-heading,
+.practice-services-heading {
+  align-items: end;
+}
+
+.practice-projects-heading > p,
+.practice-services-heading > p {
+  max-width: 560px;
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.practice-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.practice-project-card {
+  position: relative;
+  min-height: 330px;
+  padding: 34px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+}
+
+.practice-project-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 76px;
+  height: 3px;
+  background: #e2231a;
+}
+
+.practice-project-label {
+  margin: 10px 0 18px;
+  color: #e2231a;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.practice-project-card h3 {
+  margin-bottom: 18px;
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+}
+
+.practice-project-card > p:last-child {
+  margin-bottom: 0;
+  line-height: 1.75;
+}
+
+.practice-services {
+  background: #ffffff;
+}
+
+.practice-service-list {
+  border-top: 1px solid #d8d8d8;
+}
+
+.practice-service-item {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 70px);
+  padding-block: 36px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.practice-service-accent {
+  width: 40px;
+  height: 2px;
+  margin-top: 11px;
+  background: #e2231a;
+}
+
+.practice-service-item h3 {
+  margin-bottom: 12px;
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+}
+
+.practice-service-item p {
+  max-width: 760px;
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.practice-process {
+  background: #f7f7f7;
+}
+
+.practice-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+}
+
+.practice-process-step {
+  min-height: 330px;
+  padding: 32px;
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.practice-process-label {
+  margin-bottom: 44px;
+  color: #e2231a;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.practice-process-step h3 {
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+}
+
+.practice-process-step p:last-child {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.practice-guides {
+  background: #ffffff;
+}
+
+.practice-cta {
+  color: #ffffff;
+  background: #171717;
+}
+
+.practice-cta-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(48px, 9vw, 140px);
+  align-items: center;
+}
+
+.practice-cta h2 {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.practice-cta-grid > div:last-child {
+  max-width: 680px;
+}
+
+.practice-cta-grid > div:last-child p {
+  margin-bottom: 30px;
+  color: #b9b9b9;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 1000px) {
+  .practice-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .practice-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 850px) {
+  .practice-overview-grid,
+  .practice-cta-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  .practice-project-grid,
+  .practice-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .practice-project-card,
+  .practice-process-step {
+    min-height: auto;
+  }
+
+  .practice-service-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .practice-process-label {
+    margin-bottom: 24px;
+  }
+}
