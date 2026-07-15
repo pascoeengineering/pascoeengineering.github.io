@@ -3302,3 +3302,47 @@ p {
     margin-bottom: 24px;
   }
 }
+/* =========================
+   Land Development
+   ========================= */
+
+.land-coordination {
+  color: #ffffff;
+  background: #171717;
+}
+
+.land-coordination-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(48px, 9vw, 140px);
+  align-items: start;
+}
+
+.land-coordination h2 {
+  max-width: 620px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.land-coordination-content {
+  max-width: 680px;
+}
+
+.land-coordination-lead {
+  color: #ffffff !important;
+  font-size: clamp(1.25rem, 2.3vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.land-coordination-content p {
+  color: #b9b9b9;
+  line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+  .land-coordination-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
