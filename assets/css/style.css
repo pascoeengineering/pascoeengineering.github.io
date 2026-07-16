@@ -3346,3 +3346,47 @@ p {
     gap: 32px;
   }
 }
+/* =========================
+   Engineering Support
+   ========================= */
+
+.support-collaboration {
+  color: #ffffff;
+  background: #171717;
+}
+
+.support-collaboration-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(48px, 9vw, 140px);
+  align-items: start;
+}
+
+.support-collaboration h2 {
+  max-width: 650px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.support-collaboration-content {
+  max-width: 680px;
+}
+
+.support-collaboration-lead {
+  color: #ffffff !important;
+  font-size: clamp(1.25rem, 2.3vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.support-collaboration-content p {
+  color: #b9b9b9;
+  line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+  .support-collaboration-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
