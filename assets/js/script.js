@@ -18,10 +18,3 @@ const yearElements = document.querySelectorAll(".current-year");
 yearElements.forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
-const projectContactForm = document.querySelector("#project-contact-form");
-
-if (projectContactForm) {
-  projectContactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-  });
-}
